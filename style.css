@@ -1,0 +1,105 @@
+html{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background:  #100f36;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+h1{
+    color: yellow;
+    text-shadow: 4px 8px 8px black;
+}
+h1 span{
+    color: #04d1bd;
+}
+.container{
+    width: 370px;
+    text-align: center;
+}
+#formControl{
+    background: transparent;
+    outline: none;
+    border: 1px solid skyblue;
+    height: 2.5rem;
+    width: 220px;
+    transition: 0.5s;
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+#formControl:focus{
+    width: 90%;
+    border: 2px solid #04d1bd;
+    box-shadow: 4px 6px 4px black;
+}
+#todoListContainer{
+    width: 90%;
+    margin: auto;
+}
+.todoList{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(45deg , #0AC9AF 0%,#FFD706 100%);
+    padding: 0 5%;
+    border-radius: 5px;
+    margin-bottom: 0.3rem;
+}
+
+.checkAndNoteContainer{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.checkBox{
+  height: 18px;
+  width: 18px;
+  accent-color: rgb(255, 255, 255);
+}
+
+.todoList p{
+    margin: 4%;
+}
+.trashIcon{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+button{
+    width: 100px;
+    height: 32px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 0.7rem;
+    transition: 0.3s;
+}
+.saveBtn{
+    background: #04d1bd;
+}
+.saveBtn:hover{
+    background: #038578;
+}
+.clearBtn{
+    background: #FFD706;
+}
+.clearBtn:hover{
+    background: #8f7803;
+}
+/* .editIcon{
+    font-size: 1.2rem;
+    margin-right: 3px;
+    cursor: pointer;
+} */
